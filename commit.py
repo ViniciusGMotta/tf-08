@@ -43,3 +43,12 @@ class Repositorio:
             total = total + 1
             atual = atual.pai
         return total
+
+
+repositorio = Repositorio("tf-08", "Vinicius Gabriel de Souza Motta - 6326146")
+repositorio.log()
+repositorio.commitar("Inicia o historico de commits")
+repositorio.commitar("Adiciona o metodo commitar")
+repositorio.commitar("Confere o total de commits")
+repositorio.log()
+print(repositorio.total_de_commits())
